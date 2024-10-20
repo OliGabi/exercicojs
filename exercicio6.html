@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Força</title>
+    <link rel="stylesheet" href="styles6.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Força</h1>
+        <h2>Situação 1: Força Resultante</h2>
+        <input type="number" id="mass1" placeholder="Massa do objeto (kg)">
+        <input type="number" id="acceleration1" placeholder="Aceleração 1 (m/s²)">
+        <input type="number" id="acceleration2" placeholder="Aceleração 2 (m/s²)">
+        <button onclick="calculateResultantForce()">Calcular Força Resultante</button>
+        <div id="result1"></div>
+
+        <h2>Situação 2: Força de Ação e Reação</h2>
+        <input type="number" id="mass2" placeholder="Massa do objeto 1 (kg)">
+        <input type="number" id="acceleration3" placeholder="Aceleração do objeto 1 (m/s²)">
+        <input type="number" id="mass3" placeholder="Massa do objeto 2 (kg)">
+        <input type="number" id="acceleration4" placeholder="Aceleração do objeto 2 (m/s²)">
+        <button onclick="calculateActionReactionForce()">Calcular Força de Ação/Reação</button>
+        <div id="result2"></div>
+    </div>
+    <script src="script6.js"></script>
+</body>
+</html>

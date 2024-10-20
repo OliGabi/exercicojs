@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ligações Químicas</title>
+    <link rel="stylesheet" href="styles8.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Ligações Químicas</h1>
+        <h2>Ligações Iônicas</h2>
+        <input type="number" id="metalElectrons" placeholder="Elétrons perdidos pelo metal">
+        <input type="number" id="nonMetalElectrons" placeholder="Elétrons ganhos pelo ametal">
+        <button onclick="calculateIonicBond()">Calcular Ligação Iônica</button>
+        <div id="ionicResult"></div>
+
+        <h2>Ligações Covalentes</h2>
+        <input type="number" id="atom1Bonds" placeholder="Ligações do átomo 1">
+        <input type="number" id="atom2Bonds" placeholder="Ligações do átomo 2">
+        <button onclick="calculateCovalentBond()">Calcular Ligação Covalente</button>
+        <div id="covalentResult"></div>
+    </div>
+    <script src="script8.js"></script>
+</body>
+</html>
